@@ -11,7 +11,7 @@
 }
 
 
-/* shared styles */
+/*                        shared styles                         */
 
 .display-flex{
     display: flex;
@@ -31,13 +31,28 @@
    background-color: rgba(255, 144, 14, 0.1); 
 }
 
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+}
+
 /* header styles */
 
 /* navbar related styles */
 
 .navbar{
     justify-content: space-between;
-    text-decoration: none;
+    align-items: center;
+}
+
+.brand{
+    font-weight: 700;
+    font-size: 3rem;
 }
 
 .nav-links{
@@ -54,4 +69,37 @@
 .navbar , .banner{
     max-width: 1440px;
     margin: 0 auto;
+}
+
+/*banner related styled*/
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner-image{
+    width: 100%;
+}
+
+/*
+5 things to remember for responsiveness::after
+1: breakpoint = small , medium , large
+2: media query
+3: style 
+4: image , navbar , font size
+5:test
+*/
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    .navbar , .nav-links{
+        flex-direction: column;
+    }
 }
