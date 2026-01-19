@@ -11,7 +11,7 @@
 }
 
 
-/*                        shared styles                         */
+/*shared styles */
 
 .display-flex{
     display: flex;
@@ -55,8 +55,11 @@
     font-size: 3rem;
 }
 
+a{
+    text-decoration: none;  /*anchor er underline chole jabe*/
+}
+
 .nav-links{
-    text-decoration: none;  /*underline chole jabe arki kintu amrta kano jai na :)*/
     font-weight: 500;
     /* color: #727272; */
 }
